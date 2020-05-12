@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css?family=Courgette|Tangerine|Lobster|Caveat|Dancing+Script|Open+Sans" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Notory App By Fyardlest</title>
+    <title>Notary App By Fyardlest</title>
 </head>
 
 <body>
@@ -24,8 +24,8 @@
         <div class="row">
             <!-- MAIN CONTENT AREA -->
             <div class="col-md-8">
-                <img src="img/px1200_United_Kingdom.svg.png" width="50%" alt="Site Logo" class="responsive">
-                <div class="card mb-4">
+                <img src="img/px1200_United_Kingdom.svg.png" alt="Site Logo" class="responsive">
+                <div class="card my-4">
                     <h2 class="card-header" id="fileName">Book Title</h2>
                     <div class="card-body">
                         <div class="displayBox scroll-box" id="fileContent">
@@ -38,7 +38,80 @@
                 </div>
             </div>
             <!-- SIDEBAR CONTENT -->
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <!-- Search widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control mr-2" id="keyWord" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-footer" id="searchStat">
+
+                    </div>
+                </div>
+                <!-- Search a book widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Search a book</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled mb-0">
+                                    <li> <a href="#"> Harry Potter</a> </li>
+                                    <li><a href="#"> Alice in Wonderland</a></li>
+                                    <li><a href="#"> Lord of the Rings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Most Used Words -->
+                <div class="card my-4">
+                    <h5 class="card-header">Most Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled mb-0" id="mostUsed">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Last Used Words -->
+                <div class="card my-4">
+                    <h5 class="card-header">Last Used Words</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled mb-0" id="lastUsed">
+                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Stats -->
+                <div class="card my-4">
+                    <h5 class="card-header">Document Stats</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="list-unstyled mb-0" id="docStats">
+                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
